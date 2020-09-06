@@ -3,14 +3,29 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import { headerComponent } from './header/header.component';
+
+import { RecipeComponent } from './recipes/recipes.component';
+import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
+import { RecipeDetailsComponent } from './recipes/recipe-details/recipe-details.component';
+import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
+
+import { ShoppingListComponent } from './shoppingList/shoppingList.component';
+import { ShoppingEditComponent } from './shoppingList/shopping-edit/shopping-edit.component';
+
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		headerComponent,
+		RecipeComponent,
+		RecipeDetailsComponent,
+		RecipeItemComponent,
+		RecipeListComponent,
+		ShoppingListComponent,
+		ShoppingEditComponent
+	],
+	imports: [ BrowserModule ],
+	providers: [],
+	bootstrap: [ AppComponent ]
 })
-export class AppModule { }
+export class AppModule {}
